@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/18e7b653f0.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Images/MKlogo.png" alt="" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Fullstack Developer</p>
+                <h1>Hi, I'm <span>Munikishan</span> From Hyderabad</h1>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- About details -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col1">
+                    <img src="Images/IMG_3160.jpg" alt="">
+                </div>
+                <div class="about-col2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Certified Python Developer offering total 2+ years of extensive experience in IT industry and
+                        exceptional analytical and critical thinking skills in python programming . Delivers a proactive
+                        approach, great work ethic, and the ability to function well in fast-paced/deadline-driven team
+                        environments.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Languages:</span><br>Core Python & Advance Python</li>
+                            <li><span>Frontend Technologies & Framework:</span><br>HTML5, Bootstrap , CSS, ReactJS and
+                                Angular</li>
+                            <li><span>Scripting Language:</span><br>JavaScript & Typescript</li>
+                            <li><span>Database Languages:</span><br>SQL, MySQL</li>
+                            <li><span>Backend Framework :</span><br>Django</li>
+                            <li><span>Other Tools :</span><br>VS Code, PyCharm, Sublime, Jira, XAMPP</li>
+                            <li><span>Version Control System :</span><br>Git & GitHub</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>FNF INDIA | Operations Analyst (Tech Support) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Feb 2021 - June 2021</span><br>-
+                                Managed release schedules, ensuring on-time and smooth deployments. <br>
+                                - Conducted performance analysis, identifying and resolving bottlenecks.<br>
+                                - Documented operational procedures and configurations. Collaborated with development
+                                teams to enhance application scalability.<br>
+                                - Designed and implemented monitoring solutions to proactively identify and address
+                                system issues.<br> - Conducted knowledge-sharing sessions to facilitate better
+                                collaboration between development and operations teams.</li><br>
+                            <li><span>FNF INDIA | Operations Analyst (Custom Development & Support Services)   July 2021 - Feb 2023</span><br>-
+                                Involved in the design and development of the application using Python, HTML5, CSS3,
+                                Bootstrap. <br>
+                                - Design, develop, maintain, and update a variety of websites as assigned. <br>
+                                - Models creation, MySQL integration & Admin Panel. <br>
+                                - Developed scalable and maintainable web applications using Python-based frameworks such
+                                as Django for backend development.
+                                <br>- Integrated front-end and back-end components to create seamless user experiences and
+                                interactive web applications.
+                                <br>- Implemented CRUD operations and optimized database queries to ensure efficient data
+                                retrieval and storage.
+                                <br>- Developed RESTful APIs using Python-based frameworks like Django REST Framework to
+                                enable communication between frontend and backend components.
+                                <br>- Admin Panel Customizations in Django.
+                                Show information and details in dynamic templates and URL. <br>- Create Model Forms CRUD
+                                operations (Create, Read, Update, Delete).
+                               <br>- Creating Add Category Model & Get Fetch by Category.
+                                <br>- Created technical documentation, including API documentation, system architecture
+                                diagrams, and deployment guides, to facilitate team collaboration and knowledge
+                                transfer.</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>College &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2020</span><br><br>Bachelor's Degree from Loyola College(OSMANIA UNIVERSITY) - 7.57 CPGA </li><br>
+                            <li><span>School &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2017</span><br><br>Kendriya Vidyalaya Bolarum - 6.8 CGPA</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- services -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Front-End Developement</h2>
+                    <p>As a passionate frontend developer, I specialize in crafting visually appealing and responsive websites using HTML, CSS, and JavaScript, along with advanced frameworks like React. My portfolio showcases a range of projects that highlight my ability to translate complex designs into seamless user experiences. Each project features detailed explanations, live demos, and code snippets to demonstrate my technical proficiency and problem-solving skills. Dive into my work to see how I deliver both creative and efficient web solutions.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-sharp fa-solid fa-crop"></i>
+                    <h2>Back-End Developement</h2>
+                    <p>As a skilled backend developer, my expertise lies in building robust and scalable server-side applications using technologies like Node.js, Python, and Django, alongside databases such as MySQL. My portfolio presents a collection of projects that demonstrate my ability to engineer efficient data handling and seamless integration solutions. Each project is accompanied by detailed descriptions, architecture diagrams, and code snippets to illustrate my approach to solving complex backend challenges. Explore my work to understand how I develop powerful systems that drive modern web applications.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>Web Application Development</h2>
+                    <p>As a web application developer, I specialize in creating dynamic, scalable, and user-centric web applications using the latest technologies such as React, Node.js, and Django. My portfolio showcases a variety of projects that demonstrate my ability to develop robust front-end interfaces and efficient back-end services. Each project is detailed with insights into the development process, technical challenges overcome, and the impact on end-users. Take a look at my work to see how I combine technical expertise with creative problem-solving to deliver compelling web solutions.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- portfolio -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="Images/inventory.jpeg" alt="">
+                    <div class="layer">
+                        <h3>Inventory Management</h3>
+                        <p>Inventory management refers to the process of storing, ordering, and selling of goods and services. The discipline also involves the management of various supplies and processes. One of the most critical aspects of inventory management is managing the flow of raw materials from their procurement to finished products.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/car_parking.jpg" alt="">
+                    <div class="layer">
+                        <h3>Car Parking Management</h3>
+                        <p>Parking management refers to the processes, systems, and strategies used to effectively manage the use of parking spaces. The goal of parking management is to ensure that parking spaces are available and accessible to those who need them while also preventing overcrowding and promoting safety</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/E_commerce.png" alt="">
+                    <div class="layer">
+                        <h3>E-commerce Website</h3>
+                        <p>An ecommerce website is your digital storefront on the internet. It facilitates the transaction between a buyer and seller. It is the virtual space where you showcase products, and online customers make selections. Your website acts as the product shelves, sales staff, and cash register of your online business channel.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+    <!-- contact -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-regular fa-envelope"></i> munikishan003@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 8106683745</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                    <a href="Images/Resume (4).pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form method="post" name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright @Munikishan. Made with <i class="fa-sharp fa-solid fa-heart"></i> MK</p>
+        </div>
+    </div>
+
+
+
+    <script>
+        let tablinks = document.getElementsByClassName('tab-links');
+        let tabcontents = document.getElementsByClassName('tab-contents');
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link")
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+
+        let sidemeu = document.getElementById('sidemenu');
+
+        function openmenu() {
+            sidemeu.style.right = "0"
+        }
+        function closemenu() {
+            sidemeu.style.right = "-200px"
+        }
+
+
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzMqwybA-DXqioHMD4cHRnAhMj5CDBMyOg_lgGdSjmPZA1XH5BPQPF_uiWAFYTaJIe4hQ/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById('msg')
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = 'Message Sent Successfully'
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 3000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+</html>
